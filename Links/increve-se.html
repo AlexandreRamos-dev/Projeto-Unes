@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>UNES - inscreva-se</title>
+    <link rel="stylesheet" href="../CSS/increve-se.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <img src="../imagens/logo.png" alt="logo">
+
+            <span class="material-symbols-outlined" id="mobileMenu">menu</span>
+
+            <ul class="nav-list" id="navList">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="QuemSomos.html">Quem Somos</a></li>
+                <li><a href="increve-se.html" >inscreva-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <form action="#" method="get">
+                <h2>Seus dados iniciais</h2>
+                        <label for="">Nome Completo</label><br>
+                        <input type="text" name="NomeCompleto" id="NomeCompleto" placeholder="Insira o seu nome Completo" required>
+                        <h2>Sexo</h2><br>
+                        <input type="radio" name="sexRadio" id="masc" value="masc" checked required>
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="sexRadio" id="femi" value="Femi" required>
+                        <label for="femi">Feminino</label>
+                        <input type="radio" name="sexRadio" id="outro" value="outro" required>
+                        <label for="outro">Outros</label><br>
+
+                <h2>Estado</h2>
+                    <select name="Estado" required>
+                        <option value="">Selecione seu Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <OPtion value="TO">Tocantins</OPtion>
+                    </select>
+
+                    <h2>Seus contatos</h2>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder=" E-mail" required>
+
+                    <label for="telefone">telefone</label>
+                    <input type="text" name="telefone" id="telefone" placeholder=" (83) 91111-1111" required><br>
+
+                    <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
